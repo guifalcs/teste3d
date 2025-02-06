@@ -31,6 +31,9 @@ scene.add(lightHelper, gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
+const spaceTexture = new THREE.TextureLoader().load('../public/pexels-krisof-1252890.jpg');
+scene.background = spaceTexture;
+
 
 function animate(){
     requestAnimationFrame(animate);
